@@ -10,3 +10,59 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 }
+ background-image: url(../images/cover-image-light.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--main-font-family);
+  color: #353430;
+  font-size: var(--main-font-size);
+  --title-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --text-color: #353430;
+  --title-shadow-color: #ff0070;
+  --main-text-color: #353430;
+  --decorated-color: #353430;
+  --section-text-color: var(--main-text-color);
+  --button-color: var(--text-color);
+  --bg-color: #fff1f7;
+}
+
+.page.theme_light .rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем переменные светлой темы */
+    background-image: url(../images/cover-image-light.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: var(--main-font-family);
+  color: #353430;
+  font-size: var(--main-font-size);
+  --title-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --text-color: #353430;
+  --title-shadow-color: #ff0070;
+  --main-text-color: #353430;
+  --decorated-color: #353430;
+  --section-text-color: var(--main-text-color);
+  --button-color: var(--text-color);
+  --bg-color: #fff1f7;
+  }
+
+  .page.theme_light .rec {
+    display: none;
+  }
+}
+
+@media (width >= 1024px) {
+  .title {
+    text-shadow: 4px 4px 0px var(--title-shadow-color);
+  }
+  .footer__text {
+    text-shadow: 2px 2px 0px var(--title-shadow-color);
+  }
+}
